@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".camera.Internet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm Listening to You..."
+        android:textColor="@color/gray"
+        android:textSize="65sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_wave"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:src="@drawable/wave"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/img_wave2"
+        android:layout_width="700dp"
+        android:layout_height="300dp"
+        android:src="@drawable/wave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn_talki"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:background="@drawable/mic"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="155dp"
+        />
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="text"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="50dp"
+        android:textSize="40dp"/>
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="35dp"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btn_map"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/maps" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_map"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_assistant"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/assistant"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assistant"
+                    android:textSize="50dp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_assistant"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_chrome"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/chrome"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chrome"
+                    android:textSize="50sp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_chrome"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="12dp"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="9">
+
+                <ImageButton
+                    android:id="@+id/btn_gmail"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:background="@drawable/gmail"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignStart="@+id/btn_map"
+                    android:layout_alignEnd="@+id/btn_map"
+                    tools:ignore="NotSibling" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gmail"
+                    android:textSize="50dp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_gmail"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignStart="@id/btn_gmail"
+
+                    />
+
+            </RelativeLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</RelativeLayout>

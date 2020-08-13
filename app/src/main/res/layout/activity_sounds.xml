@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".camera.Sounds">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I'm Listening to You..."
+        android:textColor="@color/gray"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        />
+
+    <ImageView
+        android:id="@+id/img_wave"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:src="@drawable/wave"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        />
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/img_wave2"
+        android:layout_width="400dp"
+        android:layout_height="280dp"
+        android:src="@drawable/wave"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn_talks"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/mic"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        />
+
+    <TextView
+        android:id="@+id/textTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="text"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textColorHint="@color/gray"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="100dp"
+        android:textSize="40dp"/>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_quran"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/quran"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quran"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_quran"
+                    android:layout_marginTop="110dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_reader"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/reader"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voice"
+                    android:textSize="24dp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_reader"
+                    android:layout_marginTop="110dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btn_youtube"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/youtube"
+                    android:layout_margin="15dp"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Youtube"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:layout_alignTop="@+id/btn_youtube"
+                    android:layout_marginTop="110dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</RelativeLayout>
